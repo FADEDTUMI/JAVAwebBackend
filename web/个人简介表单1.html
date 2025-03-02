@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人简介表单</title>
+  </head>
+  <body>
+    <div>
+      <!--将表单信息提交到../submit/个人简介提交.txt内-->
+      <form
+        action="../php/personal_information.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <!--enctype="multipart/form-data"用于上传文件-->
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" /><br />
+        <label for="psw">密码：</label>
+        <input type="password" id="psw" name="psw" /><br />
+        <label for="sex">性别：</label>
+        <input type="radio" name="sex" value="male" />男
+        <input type="radio" name="sex" value="female" />女<br />
+        <label for="hobby">爱好：</label>
+        <input type="checkbox" name="hobby[]" value="java" />java
+        <input type="checkbox" name="hobby[]" value="game" />game
+        <input type="checkbox" name="hobby[]" value="sing" />sing<br />
+        <label for="pic">图像：</label>
+        <input type="file" name="pic" /><br />
+        <label for="birthday">生日：</label>
+        <input type="date" name="birthday" /><br />
+        <label for="time">时间：</label>
+        <input type="time" name="time" /><br />
+        <label for="datetime">日期时间：</label>
+        <input type="datetime-local" name="datetime" /><br />
+        <label for="email">邮箱：</label>
+        <input type="email" name="email" /><br />
+        <label for="age">年龄：</label>
+        <input type="number" name="age" /><br />
+        <label for="degree">学历：</label>
+        <select name="degree">
+          <option value="unselected">-------------请选择-------------</option>
+          <option value="junior">初中</option>
+          <option value="senior">高中</option>
+          <option value="college">大学</option></select
+        ><br />
+        <label for="display">描述：</label>
+        <textarea name="display" id="display" cols="30" rows="10"></textarea
+        ><br />
+        <button type="button">按钮</button>
+        <button type="reset">重置</button>
+        <button type="submit">提交</button>
+      </form>
+    </div>
+  </body>
+</html>

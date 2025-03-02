@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM操作示例</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h2 {
+        margin-top: 30px;
+      }
+      img {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="light" src="../image/off.gif" alt="灯泡" width="100" />
+    <br />
+    <button id="btnOn">点亮</button>
+    <button id="btnOff">熄灭</button>
+    <br />
+    <br />
+    <input type="text" id="textInput" placeholder="请输入文字" />
+    <br />
+    <br />
+    <label><input type="checkbox" class="checkbox" id="chk1" /> 电影</label>
+    <label><input type="checkbox" class="checkbox" id="chk2" /> 旅游</label>
+    <label><input type="checkbox" class="checkbox" id="chk3" /> 游戏</label>
+    <br />
+    <button id="btnSelectAll">全选</button>
+    <button id="btnDeselectAll">反选</button>
+
+    <script>
+      // 灯泡控制
+      document.getElementById("btnOn").addEventListener("click", function () {
+        document.getElementById("light").src = "../image/on.gif";
+      });
+      document.getElementById("btnOff").addEventListener("click", function () {
+        document.getElementById("light").src = "../image/off.gif";
+      });
+
+      // 输入框大小写转换
+      var textInput = document.getElementById("textInput");
+      textInput.addEventListener("focus", function () {
+        // 转换为小写
+        this.value = this.value.toLowerCase();
+      });
+      textInput.addEventListener("blur", function () {
+        // 转换为大写
+        this.value = this.value.toUpperCase();
+      });
+
+      // 复选框全选/反选
+      var checkboxes = document.querySelectorAll(".checkbox");
+      document
+        .getElementById("btnSelectAll")
+        .addEventListener("click", function () {
+          checkboxes.forEach(function (chk) {
+            chk.checked = true;
+          });
+        });
+      document
+        .getElementById("btnDeselectAll")
+        .addEventListener("click", function () {
+          checkboxes.forEach(function (chk) {
+            chk.checked = false;
+          });
+        });
+    </script>
+  </body>
+</html>

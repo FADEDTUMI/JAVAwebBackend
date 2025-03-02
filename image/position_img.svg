@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="管理/内容/全部（1200）-copy" transform="translate(-448.000000, -1478.000000)">
+            <g id="Group-27" transform="translate(448.002749, 1478.513669)">
+                <g id="定位">
+                    <g>
+                        <rect id="Rectangle" fill-opacity="0.01" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M12,18.554641 C12,18.554641 17.4974409,14.961852 17.4974409,10.8082394 C17.4974409,7.84640433 15.036152,5.44535898 12,5.44535898 C8.96384799,5.44535898 6.50255914,7.84640433 6.50255914,10.8082394 C6.50255914,14.961852 12,18.554641 12,18.554641 Z" id="Path" stroke="#000000" stroke-width="1.2" opacity="0.4" stroke-linejoin="round"></path>
+                        <path d="M12,13.0572002 C13.167741,13.0572002 14.1144003,12.1105408 14.1144003,10.9427998 C14.1144003,9.77505882 13.167741,8.82839951 12,8.82839951 C10.832259,8.82839951 9.88559967,9.77505882 9.88559967,10.9427998 C9.88559967,12.1105408 10.832259,13.0572002 12,13.0572002 Z" id="Path" stroke="#000000" stroke-width="1.2" opacity="0.4" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
